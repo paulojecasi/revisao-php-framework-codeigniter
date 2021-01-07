@@ -9,27 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Home</title>
+    <title> <?php echo $nomeblog ?> </title>
 
 
     <!-- Bootstrap Core CSS -->
-    <!--  Nao funcionou, usei a forma tradicional - PJCS 
     <link href="<?php echo base_url('assets/frontend/css/bootstrap.min.css') ?>" rel="stylesheet">
-    -->
-    <link href="assets/frontend/css/bootstrap.min.css" rel="stylesheet">
-
+   
     <!-- Custom CSS -->
-    <!--  Nao funcionou, usei a forma tradicional - PJCS 
     <link href="<?php echo base_url('assets/frontend/css/blog.css') ?>" rel="stylesheet">
-    --> 
-    <link href="assets/frontend/css/blog.css" rel="stylesheet">
 
-        <!-- Custom Fonts -->
-        <!--  Nao funcionou, usei a forma tradicional - PJCS 
+    <!-- Custom Fonts -->
     <link href="<?php echo base_url('assets/frontend/css/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
-        --> 
-    <link href="assets/frontend/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+ 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
