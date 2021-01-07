@@ -8,6 +8,7 @@ class Home extends CI_Controller {
 
 		parent::__construct(); 
 
+		// como vai aparecer em todas a paginas, chamamos o model aqui no construtor - PJCS 
 		// vamos chamar o model "Categorias_model" para listagem dos models cadastrados
 				// como fosse:
 				// modelcategorias = new Categorias_model(); 
@@ -20,11 +21,16 @@ class Home extends CI_Controller {
 	public function index()
 	{
 
+		// vamos carregar os "$dados" com a variavel "$categoria" carregado no CONSTRUTOR
 		$dados['categorias'] = $this->categorias; 
+
+		//como se fosse:  modelpublicacoes = new Publicacoes_model();
+		$this->load->model('publicacoes_model','modelpublicacoes'); 
+		$dados['postagens'] = $this->modelpublicacoes->destaques_home(); 
 
 		$this->load->view('frontend/template/html-header', $dados);
 		$this->load->view('frontend/template/header');
-		$this->load->view('frontend/template/home');
+		$this->load->view('frontend/home');
 		$this->load->view('frontend/template/aside');
 		$this->load->view('frontend/template/footer');
 		$this->load->view('frontend/template/html-footer'); 

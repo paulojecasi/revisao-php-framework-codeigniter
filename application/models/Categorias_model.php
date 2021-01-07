@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Categorias_model extends CI_Controller {
+class Categorias_model extends CI_Model {
 
 	public $id;
 	public $titulo; 
@@ -14,7 +14,7 @@ class Categorias_model extends CI_Controller {
 
 	public function listar_categorias(){
 
-		//consulta no banco ondenando pelo titulo (ASC= Crescente, DASC= Decrescente)
+		//consulta no banco ondenando pelo titulo (ASC= Crescente, DESC= Decrescente)
 		$this->db->order_by('titulo','ASC'); 
 
 		// vamos informar a tabela e trazer o resultado 
