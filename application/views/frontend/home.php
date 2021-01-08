@@ -19,7 +19,7 @@
                         </a>
                     </h2>
                     <p class="lead">
-                        por <a href="<?php echo base_url('postagem/'.$destaque->idautor.'/'.limpar($destaque->nome)) ?>"> <?php echo $destaque->nome ?> </a>
+                        por <a href="<?php echo base_url('autor/'.$destaque->idautor.'/'.limpar($destaque->nome)) ?>"> <?php echo $destaque->nome ?> </a>
                     </p>
                     <p><span class="glyphicon glyphicon-time"></span>
                         Postado em :  <?php echo maskdatehour($destaque->data) ?> 

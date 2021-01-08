@@ -39,7 +39,7 @@
                       </ul>
                     </li>
                     <li>
-                        <a href="#">Sobre Nós</a>
+                        <a href="">Sobre Nós</a>
                     </li>
                     <li>
                         <a href="#">Contato</a>
