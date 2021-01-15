@@ -28,7 +28,7 @@
                                 <li> 
 
                                     <!-- Obs: No HREF, Vamos utilizar a "$categoria-titulo" dentro da  HELPERS "limpar()" para que o mesmo não carregue caracteres invalidos (sem acentos, manter as letras em MINUSCULO, sem espaços) - PJCS --> 
-                                    <a href="<?php echo base_url('categoria/'.$categoria->id.'/'.limpar($categoria->titulo)) ?>" >
+                                    <a href="<?php echo base_url('categoria/'.$categoria->id.'/'.limpar($categoria->titulo)); ?>" >
                                         <?php echo $categoria->titulo ?>
                                     </a>
                                 </li>
@@ -39,7 +39,7 @@
                       </ul>
                     </li>
                     <li>
-                        <a href="">Sobre Nós</a>
+                        <a href="<?php echo base_url('sobrenos'); ?>">Sobre Nós</a>
                     </li>
                     <li>
                         <a href="#">Contato</a>

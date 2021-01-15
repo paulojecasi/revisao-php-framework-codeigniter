@@ -12,12 +12,14 @@ class Sobrenos extends CI_Controller {
 				// como fosse:
 				// modelcategorias = new Categorias_model(); 
 		$this->load->model('categorias_model','modelcategorias');
-
 				// vamos cria uma var "$categorias" e carrega-la com o resultado 
 		$this->categorias = $this->modelcategorias->listar_categorias(); 
+
+		$this->load->model('usuarios_model','modelusuarios');
+
 	}
 
-	public function index($id, $slug=null) {
+	public function index() {
 
 		// vamos carregar os "$dados" com a variavel "$categoria" carregado no CONSTRUTOR
 		$dados['categorias'] = $this->categorias; 
@@ -43,9 +45,6 @@ class Sobrenos extends CI_Controller {
 	public function autores($id, $slug=null){
 
 		$dados['categorias'] = $this->categorias; 
-		//como se fosse:  modelpublicacoes = new Publicacoes_model();
-		$this->load->model('usuarios_model','modelusuarios');
-		$dados['autores'] = $this->modelusuarios->listar_autor($id); 
 
 		// dados a serem enviados para o cabeçalho
 		$dados['nomeblog'] 	= "Blog do Paulão"; 

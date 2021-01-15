@@ -22,5 +22,19 @@ class Categorias_model extends CI_Model {
 
 	}
 
+	public function adicionar($addcategoria_titulo){
+
+		$dados["titulo"]= $addcategoria_titulo; 
+		return $this->db->insert('categoria',$dados); 
+
+	}
+
+	public function excluir($id){
+
+		$this->db->where('md5(id)=', $id);
+		return $this->db->delete('categoria');  
+
+	}
+
 
 }

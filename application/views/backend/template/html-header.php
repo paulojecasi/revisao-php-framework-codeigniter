@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Painel Administrativo</title>
+    <title> <?php echo $titulo." - ".$subtitulo ?> </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url('assets/backend/css/bootstrap.min.css') ?>" rel="stylesheet">
@@ -19,6 +19,9 @@
 
     <!-- Custom Fonts -->
     <link href="<?php echo base_url('assets/backend/css/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
+
+    <!-- para icones  -->
+    <script src="https://kit.fontawesome.com/006642858d.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
